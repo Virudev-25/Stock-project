@@ -1,0 +1,215 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #020617, #0f172a);
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+.container {
+    background: #111827;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 8px 20px;
+    background: cyan;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:15px;
+    margin-left:15px;
+}
+
+.login-box {
+    background: #111827;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+}
+
+.login-box input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-box button {
+    padding: 10px 20px;
+    background: cyan;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn {
+    position: static; /* remove absolute positioning */
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e5ff;
+}
+
+.brand-name {
+    color:white;
+    font-weight: bold;
+    font-size: 24px; /* adjust as needed */
+    font-family: Arial, sans-serif; /* optional */
+}
+
+.logo {
+    display: flex;              /* puts items side by side */
+    align-items: center;        /* vertical alignment */
+    gap: 10px;                  /* space between logo & text */
+}
+.header { 
+          position: absolute;
+          top: 15px; 
+          left: 15px; 
+          right: 15px; 
+          display: flex; 
+          justify-content: 
+          space-between; 
+          align-items: center; 
+        }
+
+.main-layout {
+    display: flex;              /* enable side-by-side layout */
+    justify-content: center;    /* center horizontally */
+    align-items: flex-start;    /* align top edges */
+    gap: 50px;                  /* space between left and right sections */
+    margin-top: 50px;           /* optional spacing from header */
+}
+
+.prediction-section {
+    margin-right:150px;
+    background: #111827;
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+    text-align: left;           /* align text inside to left */
+}
+
+.top-banner {
+    margin: 90px auto 40px auto;   /* pushes below header */
+    width: 85%;
+    background: linear-gradient(135deg, #dcfce7, #ecfdf5);
+    border-radius: 15px;
+    padding: 30px 40px;
+    color: #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.banner-content {
+    padding-top:100px;
+    padding:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.check-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.check-btn:hover {
+    background: #16a34a;
+}
+
+.disclaimer-footer {
+    margin-top: 80px;
+    background: linear-gradient(135deg, #dcfce7, #ecfdf5);
+    color: #000000;
+    padding: 30px 60px;
+    font-size: 14px;
+}
+
+.disclaimer-text {
+    max-width: 1200px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.disclaimer-text strong {
+    color: #000000;
+}
+
+.copyright {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+.stock-image {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.stock-image img {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.auth-wrapper {
+    min-height: 100vh;              /* full screen height */
+    display: flex;
+    justify-content: center;        /* horizontal center */
+    align-items: center;            /* vertical center */
+}
+
+.empty-message {
+    color: #9ca3af;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    checkAuth();
+</script>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Stock Nova AI Logo">
+        <span class="brand-name">StockNova</span>
+    </div>
+
+    <button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<!-- TOP BANNER CARD -->
+<div class="top-banner">
+    <div class="banner-content">
+        <h1>Predict  Invest Prosper !</h1>
+
+        <button class="check-btn">Check Now </button>
+    </div>
+</div>
+
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="container">
+        <h1>Noise-Resilient Stock Prediction</h1>
+
+        <input type="text" id="stockInput"
+               placeholder="Enter Stock Symbol (e.g. AAPL, TCS)">
+        
+        <div class="btn-group">
+            <button onclick="predictStock()">Predict</button>
+            <button onclick="clearResult()">Clear</button>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="prediction-section">
+
+        <p id="predictionParagraph"
+           class="prediction-paragraph"
+           style="display:none;">
+        </p>
+
+        
+             <p id="emptyMessage" class="empty-message">
+        🔍 Enter a stock symbol to get prediction results.
+    </p>
+
+
+        <div id="predictionBox"
+             class="prediction-box"
+             style="display:none;">
+
+            <h2 id="decision"></h2>
+            <p id="confidence"></p>
+
+            <h3>Key Factors Influencing Prediction</h3>
+            <ul id="factorsList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- FOOTER IMAGE SECTION -->
+<div class="stock-image">
+    <img src="stock-banner.png" alt="Stock Market Banner">
+</div>
+
+<!-- DISCLAIMER FOOTER -->
+<footer class="disclaimer-footer">
+    <div class="disclaimer-text">
+        <strong>Disclaimer:</strong>
+        There is no guarantee of profits or no exceptions from losses. The investment advice
+        provided is solely the personal views of the research team. StockNova will not accept
+        any liability for loss or damage as a result of reliance on the information contained
+        within this website including data, quotes, charts and buy/sell signals. Please be fully
+        informed regarding the risks and costs associated with trading the financial markets,
+        it is one of the riskiest investment forms possible. Therefore, StockNova doesn’t bear
+        any responsibility for any trading losses you might incur as a result of using this data.
+    </div>
+
+    <div class="copyright">
+        ©2025 StockNova Media Corp. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>
