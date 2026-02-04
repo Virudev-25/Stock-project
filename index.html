@@ -38,8 +38,42 @@
     <div class="container">
         <h1>Noise-Resilient Stock Prediction</h1>
 
-        <input type="text" id="stockInput"
-               placeholder="Enter Stock Symbol (e.g. AAPL, TCS)">
+           <!-- INPUT WITH DROPDOWN -->
+    <div class="stock-input-wrapper">
+        <input type="text"
+               id="stockInput"
+               placeholder="Enter Stock Symbol (e.g. AAPL, TCS)"
+               readonly
+               onclick="toggleDropdown()">
+
+        <!-- DROPDOWN CHECKLIST -->
+        <div id="dropdown"
+             style="display:none; position:absolute; width:100%; background:#111827; border-radius:8px; box-shadow:0 0 10px cyan; max-height:180px; overflow-y:auto; z-index:10; text-align:left;">
+
+            <label><input type="checkbox" value="AAPL" onclick="selectStock(this)"> AAPL</label><br>
+            <label><input type="checkbox" value="MSFT" onclick="selectStock(this)"> MSFT</label><br>
+            <label><input type="checkbox" value="GOOGL" onclick="selectStock(this)"> GOOGL</label><br>
+            <label><input type="checkbox" value="AMZN" onclick="selectStock(this)"> AMZN</label><br>
+            <label><input type="checkbox" value="TSLA" onclick="selectStock(this)"> TSLA</label><br>
+            <label><input type="checkbox" value="TCS" onclick="selectStock(this)"> TCS</label><br>
+            <label><input type="checkbox" value="INFY" onclick="selectStock(this)"> INFY</label><br>
+            <label><input type="checkbox" value="RELIANCE" onclick="selectStock(this)"> RELIANCE</label><br>
+            <label><input type="checkbox" value="META" onclick="selectStock(this)"> META</label><br>
+            <label><input type="checkbox" value="NVDA" onclick="selectStock(this)"> NVDA</label><br>
+            <label><input type="checkbox" value="NFLX" onclick="selectStock(this)"> NFLX</label><br>
+            <label><input type="checkbox" value="AMD" onclick="selectStock(this)"> AMD</label><br>
+            <label><input type="checkbox" value="JPM" onclick="selectStock(this)"> JPM</label><br>
+            <label><input type="checkbox" value="HDFCBANK" onclick="selectStock(this)"> HDFCBANK</label><br>
+            <label><input type="checkbox" value="ICICIBANK" onclick="selectStock(this)"> ICICIBANK</label><br>
+            <label><input type="checkbox" value="SBIN" onclick="selectStock(this)"> SBIN</label><br>
+            <label><input type="checkbox" value="LT" onclick="selectStock(this)"> LT</label><br>
+            <label><input type="checkbox" value="WIPRO" onclick="selectStock(this)"> WIPRO</label><br>
+            <label><input type="checkbox" value="HCLTECH" onclick="selectStock(this)"> HCLTECH</label><br>
+            <label><input type="checkbox" value="ITC" onclick="selectStock(this)">ITC</label><br>
+        </div>
+    </div>
+
+    
         
         <div class="btn-group">
             <button onclick="predictStock()">Predict</button>

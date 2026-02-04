@@ -147,3 +147,32 @@ function clearResult() {
     document.getElementById("confidence").innerText = "";
     document.getElementById("factorsList").innerText = "";
 }
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.style.display =
+        dropdown.style.display === "none" ? "block" : "none";
+}
+
+function selectStock(checkbox) {
+    // Uncheck other checkboxes
+    const checkboxes = document.querySelectorAll("#dropdown input[type='checkbox']");
+    checkboxes.forEach(cb => {
+        if (cb !== checkbox) cb.checked = false;
+    });
+
+    // Set selected value in input
+    document.getElementById("stockInput").value = checkbox.value;
+
+    // Hide dropdown
+    document.getElementById("dropdown").style.display = "none";
+}
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function (event) {
+    const wrapper = document.querySelector(".input-wrapper");
+    if (!wrapper.contains(event.target)) {
+        document.getElementById("dropdown").style.display = "none";
+    }
+});
+
